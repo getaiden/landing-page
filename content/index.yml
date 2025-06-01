@@ -1,0 +1,160 @@
+seo:
+  title: aiden
+  description: Transform your data using conversational prompts with our AI-powered data transformations.
+title: Welcome to [aiden]{.text-primary}
+description: Transform your data using conversational prompts with our AI-powered data transformations.
+hero:
+  links:
+    - label: Getting Started
+      icon: i-lucide-arrow-right
+      trailing: true
+      variant: subtle
+      to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt'
+      target: _blank
+      size: xl
+    - label: Clone on GitHub
+      icon: i-simple-icons-github
+      size: xl
+      color: neutral
+      variant: ghost
+      to: 'https://github.com/getaiden'
+      target: _blank
+section:
+  title: '[Revolutionize]{.text-primary} your data transformation'
+  description: Transform your data workflows with AI-powered conversational prompts and production-ready code generation.
+  images:
+    mobile: '/images/code-window.svg'
+    desktop: '/images/code-window.svg'
+  features:
+    - title: Natural Language to Pipeline
+      description: Transform your data using conversational prompts. Simply describe what you want, and Aiden builds the transformation pipeline for you.
+      class: border-l border-primary pl-4
+    - title: Schema-aware Intelligence
+      description: Define your input and output schemas, and Aiden intelligently validates and adapts its logic to ensure your transformations are accurate.
+      class: border-l border-default pt-4 pl-4
+    - title: Auto-generated, Deployable Code
+      description: Aiden builds production-ready code based on your schema and transformation description, ready to be integrated in your data workflows.
+      class: border-l border-default pt-4 pl-4
+features:
+  title: Simplify your [data transformations]{.text-primary}
+  description: Make every data pipeline efficient with AI-powered transformations and intelligent code generation.
+  features:
+    - title: Natural Language to Pipeline
+      description: Transform your data using conversational prompts that understand your intent.
+      icon: i-lucide-message-square
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Schema-aware Intelligence
+      description: Define your input and output schemas, and Aiden intelligently validates and adapts its logic.
+      icon: i-lucide-database
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Python SDK
+      description: Seamlessly integrate Aiden into your existing Python projects with our lightweight package.
+      icon: i-simple-icons-python
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Auto-generated, Deployable Code
+      description: Get production-ready code based on your schema and transformation description.
+      icon: i-lucide-code
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Private & Secure
+      description: Your data never leaves your environment. Aiden builds and runs code locally or in your secure environments.
+      icon: i-lucide-lock
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+steps:
+  title: Transform your data in [3 steps]{.text-primary}
+  description: Build powerful data transformations with our AI-powered assistant.
+  items:
+    - title: Define Your Schema
+      description: Specify your input and output schemas, and Aiden will understand the structure of your data to ensure accurate transformations.
+      image:
+        light: '/images/light/connect.svg'
+        dark: '/images/dark/connect.svg'
+    - title: Describe Your Transformation
+      description: Use natural language to describe how you want to transform your data. Aiden understands your intent and builds the transformation logic.
+      image:
+        light: '/images/light/optimize.svg'
+        dark: '/images/dark/optimize.svg'
+    - title: Deploy & Run
+      description: Get production-ready code that you can integrate into your data workflows or deploy with a single click using our SDK.
+      image:
+        light: '/images/light/track.svg'
+        dark: '/images/dark/track.svg'
+pricing:
+  title: Choose your [transformation]{.text-primary} plan
+  description: Unlock AI-powered data transformation with our flexible plans. Whether you're a data scientist or part of a data engineering team, we have the perfect solution for your data needs.
+  plans:
+    - title: Pro Data Scientist
+      description: Perfect for individual data scientists and analysts.
+      price: $199
+      features:
+        - Natural Language to Pipeline transformations
+        - Auto-generated, deployable Python code
+        - Python SDK integration
+        - Schema-aware intelligence
+        - Basic private & secure local execution
+        - Standard support
+      button:
+        label: Buy now
+        color: neutral
+        variant: outline
+        to: '#'
+    - title: Enterprise Team
+      description: For data engineering teams and organizations.
+      price: $499
+      features:
+        - Everything in Pro Data Scientist
+        - Agent-Powered Backend for advanced transformations
+        - Advanced private & secure environment controls
+        - Enhanced context-aware transformation suggestions
+        - Team collaboration features
+        - Advanced security controls
+        - Priority support with dedicated manager
+      button:
+        label: Buy now
+        variant: subtle
+        to: '#'
+testimonials:
+  title: Join data teams using [aiden]{.text-primary}
+  description: See how data scientists and engineers are transforming their data workflows and achieving more with our AI-powered platform.
+  items:
+    - quote: Since using Aiden, our data transformation pipeline development time has been cut in half. The natural language interface is incredibly intuitive and the generated code is production-ready.
+      user:
+        name: 'Sarah Doe'
+        description: 'Data Scientist'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
+    - quote: Game-changer for our data engineering team. The schema-aware intelligence and Agent-Powered Backend have streamlined our ETL processes and reduced errors by 60%.
+      user:
+        name: 'Sébastien Doe'
+        description: 'Lead Data Engineer'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
+    - quote: Finally, a data transformation tool that understands our complex needs. The Python SDK integration was seamless, and the private & secure execution has been invaluable for our compliance requirements.
+      user:
+        name: 'Benjamin Doe'
+        description: 'ML Engineer'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
+cta:
+  title: Transform your data with [aiden]{.text-primary}
+  description: Aiden is your AI-powered data transformations.
+  links:
+    - label: Get Started
+      to: '#'
+      target: _blank
+      icon: i-lucide-arrow-right
+      trailing: true
+    - label: Clone on GitHub
+      icon: i-simple-icons-github
+      size: xl
+      color: neutral
+      variant: ghost
+      to: 'https://github.com/getaiden'
+      target: _blank
