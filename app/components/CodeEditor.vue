@@ -3,17 +3,25 @@
     <!-- Terminal header -->
     <div class="terminal-header">
       <div class="terminal-controls">
-        <div class="control close"></div>
-        <div class="control minimize"></div>
-        <div class="control maximize"></div>
+        <div class="control close" />
+        <div class="control minimize" />
+        <div class="control maximize" />
       </div>
-      <div class="terminal-title">Python Console</div>
+      <div class="terminal-title">
+        Python Console
+      </div>
     </div>
-    
+
     <!-- Terminal content -->
     <div class="terminal-content">
       <div class="line-numbers">
-        <div v-for="n in 7" :key="n" class="line-number">{{ n }}</div>
+        <div
+          v-for="n in 7"
+          :key="n"
+          class="line-number"
+        >
+          {{ n }}
+        </div>
       </div>
       <div class="code-area">
         <div class="code-line">
@@ -23,7 +31,9 @@
           <span class="normal">import </span>
           <span class="class-name">Transformation</span>
         </div>
-        <div class="code-line">&nbsp;</div>
+        <div class="code-line">
+&nbsp;
+        </div>
         <div class="code-line">
           <span class="prompt">&gt;&gt;&gt;</span>
           <span class="normal">tr </span>

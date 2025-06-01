@@ -44,7 +44,12 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
         to="https://github.com/getaiden"
         target="_blank"
       >
-        <p><UIcon name="i-simple-icons-github" class="size-4" /> GitHub</p>
+        <p>
+          <UIcon
+            name="i-simple-icons-github"
+            class="size-4"
+          /> GitHub
+        </p>
       </UButton>
 
       <UColorModeButton />

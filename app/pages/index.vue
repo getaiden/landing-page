@@ -54,7 +54,7 @@ useSeoMeta({
           class="sm:*:leading-11"
         />
       </template>
-      <CodeEditor 
+      <CodeEditor
         class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
       />
       <CodeEditor

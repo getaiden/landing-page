@@ -1,24 +1,24 @@
 <script setup lang="ts">
-const columns = [{
-  label: 'Company',
-  children: [{
-    label: 'About'
-  }]
-}]
+// const columns = [{
+//   label: 'Company',
+//   children: [{
+//     label: 'About'
+//   }]
+// }]
 
-const toast = useToast()
+// const toast = useToast()
 
-const email = ref('')
-const loading = ref(false)
+// const email = ref('')
+// const loading = ref(false)
 
-function onSubmit() {
-  loading.value = true
+// function onSubmit() {
+//   loading.value = true
 
-  toast.add({
-    title: 'Subscribed!',
-    description: 'You\'ve been subscribed to our newsletter.'
-  })
-}
+//   toast.add({
+//     title: 'Subscribed!',
+//     description: 'You\'ve been subscribed to our newsletter.'
+//   })
+// }
 </script>
 
 <template>
@@ -40,7 +40,6 @@ function onSubmit() {
       </p>
     </template>
 
-    <template #right>
-    </template>
+    <template #right />
   </UFooter>
 </template>

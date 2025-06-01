@@ -4,11 +4,11 @@ const colorMode = useColorMode()
 
 <template>
   <div class="logo-container">
-    <img 
-      :src="colorMode.value === 'dark' ? '/logos/aiden-logo.svg' : '/logos/aiden-logo-black.svg'" 
-      alt="Aiden" 
-      class="logo-image" 
-    />
+    <img
+      :src="colorMode.value === 'dark' ? '/logos/aiden-logo.svg' : '/logos/aiden-logo-black.svg'"
+      alt="Aiden"
+      class="logo-image"
+    >
   </div>
 </template>
 

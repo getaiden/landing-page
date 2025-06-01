@@ -6,18 +6,18 @@
         description="Have questions or feedback? We'd love to hear from you."
         class="mb-4"
       />
-      
+
       <div class="w-full h-[calc(100vh-150px)] min-h-[900px] bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-sm">
-        <iframe 
-          data-tally-src="https://tally.so/r/nrpYOl?transparentBackground=1" 
-          width="100%" 
-          height="100%" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0" 
+        <iframe
+          data-tally-src="https://tally.so/r/nrpYOl?transparentBackground=1"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
           title="Contact us"
-          class="tally-iframe">
-        </iframe>
+          class="tally-iframe"
+        />
       </div>
     </UContainer>
   </div>
