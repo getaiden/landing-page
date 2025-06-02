@@ -9,7 +9,7 @@ hero:
       icon: i-lucide-arrow-right
       trailing: true
       variant: subtle
-      to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt'
+      to: 'https://github.com/getaiden/aiden'
       target: _blank
       size: xl
     - label: Clone on GitHub
