@@ -9,7 +9,7 @@ hero:
       icon: i-lucide-arrow-right
       trailing: true
       variant: subtle
-      to: 'https://ui.nuxt.com/getting-started/installation/pro/nuxt'
+      to: 'https://github.com/getaiden/aiden'
       target: _blank
       size: xl
     - label: Clone on GitHub
@@ -17,7 +17,7 @@ hero:
       size: xl
       color: neutral
       variant: ghost
-      to: 'https://github.com/getaiden'
+      to: 'https://github.com/getaiden/aiden'
       target: _blank
 section:
   title: '[Revolutionize]{.text-primary} your data transformation'
@@ -147,7 +147,7 @@ cta:
   description: Aiden is your AI-powered data transformations.
   links:
     - label: Get Started
-      to: '#'
+      to: 'https://github.com/getaiden/aiden'
       target: _blank
       icon: i-lucide-arrow-right
       trailing: true
@@ -156,5 +156,5 @@ cta:
       size: xl
       color: neutral
       variant: ghost
-      to: 'https://github.com/getaiden'
+      to: 'https://github.com/getaiden/aiden'
       target: _blank

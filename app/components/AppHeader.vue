@@ -41,7 +41,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       <UButton
         variant="subtle"
         class="hidden lg:block"
-        to="https://github.com/getaiden"
+        to="https://github.com/getaiden/aiden"
         target="_blank"
       >
         <p>
@@ -63,7 +63,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
       <UButton
         class="mt-4"
-        label="Download App"
+        to="https://github.com/getaiden/aiden"
+        label="GitHub"
         variant="subtle"
         block
       />
