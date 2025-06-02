@@ -147,7 +147,7 @@ cta:
   description: Aiden is your AI-powered data transformations.
   links:
     - label: Get Started
-      to: '#'
+      to: 'https://github.com/getaiden/aiden'
       target: _blank
       icon: i-lucide-arrow-right
       trailing: true
