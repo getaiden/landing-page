@@ -63,7 +63,8 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
       <UButton
         class="mt-4"
-        label="Download App"
+        to="https://github.com/getaiden/aiden"
+        label="GitHub"
         variant="subtle"
         block
       />
