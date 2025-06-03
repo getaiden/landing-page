@@ -15,63 +15,121 @@
     <!-- Terminal content -->
     <div class="terminal-content">
       <div class="line-numbers">
-        <div
-          v-for="n in 7"
-          :key="n"
-          class="line-number"
-        >
+        <div v-for="n in 37" :key="n" class="line-number">
           {{ n }}
         </div>
       </div>
       <div class="code-area">
         <div class="code-line">
-          <span class="prompt">&gt;&gt;&gt;</span>
-          <span class="keyword">from</span>
-          <span class="normal"> aiden </span>
-          <span class="normal">import </span>
-          <span class="class-name">Transformation</span>
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="keyword">from</span><span class="normal"> aiden </span><span class="keyword">import</span> <span class="class-name">Transformation</span>
         </div>
         <div class="code-line">
-&nbsp;
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="keyword">from</span><span class="normal"> aiden.common.dataset </span><span class="keyword">import</span> <span class="class-name">Dataset</span>
         </div>
         <div class="code-line">
-          <span class="prompt">&gt;&gt;&gt;</span>
-          <span class="normal">tr </span>
-          <span class="operator">= </span>
-          <span class="class-name">Transformation</span>
-          <span class="normal">(</span>
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="keyword">from</span><span class="normal"> aiden.common.environment </span><span class="keyword">import</span> <span class="class-name">Environment</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">&nbsp;</span>
+        </div>
+        <div class="code-line">
+          <span class="normal" style="color: #6272A4;"># Define input and output datasets</span>
+        </div>
+        <div class="code-line">
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="normal">in_dev_dataset </span><span class="operator">=</span> <span class="class-name">Dataset</span><span class="normal">(</span>
         </div>
         <div class="code-line indent">
-          <span class="string">"clean emails columns keep only valide ones"</span>
-          <span class="normal">,</span>
+          <span class="normal">path</span><span class="operator">=</span><span class="string">"./tests/input_data/emails.csv"</span><span class="normal">,</span>
         </div>
         <div class="code-line indent">
-          <span class="keyword">input_schema</span>
-          <span class="normal"> = </span>
-          <span class="normal">{ </span>
-          <span class="string">"email"</span>
-          <span class="normal">: </span>
-          <span class="builtin">str</span>
-          <span class="normal"> }</span>
-          <span class="normal">,</span>
+          <span class="normal">format</span><span class="operator">=</span><span class="string">"csv"</span><span class="normal">,</span>
         </div>
         <div class="code-line indent">
-          <span class="keyword">output_schema</span>
-          <span class="normal"> = </span>
-          <span class="normal">{ </span>
-          <span class="string">"email"</span>
-          <span class="normal">: </span>
-          <span class="builtin">str</span>
-          <span class="normal"> }</span>
+          <span class="normal">schema</span><span class="operator">=</span><span class="normal">{</span><span class="string">"email"</span><span class="operator">:</span> <span class="builtin">str</span><span class="normal">},</span>
         </div>
         <div class="code-line">
           <span class="normal">)</span>
         </div>
         <div class="code-line">
-          <span class="prompt">&gt;&gt;&gt;</span>
-          <span class="normal">tr.</span>
-          <span class="function">build</span>
-          <span class="normal">()</span>
+          <span class="normal">&nbsp;</span>
+        </div>
+        <div class="code-line">
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="normal">out_dev_dataset </span><span class="operator">=</span> <span class="class-name">Dataset</span><span class="normal">(</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">path</span><span class="operator">=</span><span class="string">"./tests/output_data/clean_emails.csv"</span><span class="normal">,</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">format</span><span class="operator">=</span><span class="string">"csv"</span><span class="normal">,</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">schema</span><span class="operator">=</span><span class="normal">{</span><span class="string">"email"</span><span class="operator">:</span> <span class="builtin">str</span><span class="normal">},</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">)</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">&nbsp;</span>
+        </div>
+        <div class="code-line">
+          <span class="normal" style="color: #6272A4;"># Create environment object with custom workdir</span>
+        </div>
+        <div class="code-line">
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="normal">env </span><span class="operator">=</span> <span class="class-name">Environment</span><span class="normal">(</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">type</span><span class="operator">=</span><span class="string">"dagster"</span><span class="normal">,</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">workdir</span><span class="operator">=</span><span class="string">"./tests/workdir/"</span><span class="normal">,</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">)</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">&nbsp;</span>
+        </div>
+        <div class="code-line">
+          <span class="normal" style="color: #6272A4;"># Define transformation with natural language intent</span>
+        </div>
+        <div class="code-line">
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="normal">tr </span><span class="operator">=</span> <span class="class-name">Transformation</span><span class="normal">(</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">intent</span><span class="operator">=</span><span class="string">"clean emails column and keep only valid ones."</span><span class="normal">,</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">environment</span><span class="operator">=</span><span class="normal">env,</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">)</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">&nbsp;</span>
+        </div>
+        <div class="code-line">
+          <span class="normal" style="color: #6272A4;"># Build the transformation with specified datasets and providers</span>
+        </div>
+        <div class="code-line">
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="normal">tr.</span><span class="function">build</span><span class="normal">(</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">input_datasets</span><span class="operator">=</span><span class="normal">[in_dev_dataset],</span>
+        </div>
+        <div class="code-line indent">
+          <span class="normal">output_dataset</span><span class="operator">=</span><span class="normal">out_dev_dataset,</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">)</span>
+        </div>
+        <div class="code-line">
+          <span class="normal">&nbsp;</span>
+        </div>
+        <div class="code-line">
+          <span class="normal" style="color: #6272A4;"># Deploy the transformation</span>
+        </div>
+        <div class="code-line">
+          <span class="prompt">&gt;&gt;&gt;</span> <span class="normal">tr.</span><span class="function">save</span><span class="normal">(</span><span class="string">"./path/to/artifacts/email_transformation.py"</span><span class="normal">)</span>
         </div>
       </div>
     </div>
