@@ -1,14 +1,30 @@
 <script setup>
 const colorMode = useColorMode()
+
+// Force the component to be client-side only to ensure proper theme detection
+const mounted = ref(false)
+onMounted(() => {
+  mounted.value = true
+})
 </script>
 
 <template>
   <div class="logo-container">
-    <img
-      :src="colorMode.value === 'dark' ? '/logos/aiden-logo.svg' : '/logos/aiden-logo-black.svg'"
-      alt="Aiden"
-      class="logo-image"
-    >
+    <ClientOnly>
+      <img
+        v-if="mounted"
+        :src="colorMode.value === 'dark' ? '/logos/aiden-logo.svg' : '/logos/aiden-logo-black.svg'"
+        alt="Aiden"
+        class="logo-image"
+      >
+      <template #fallback>
+        <img
+          src="/logos/aiden-logo.svg"
+          alt="Aiden"
+          class="logo-image"
+        >
+      </template>
+    </ClientOnly>
   </div>
 </template>
 
